@@ -1,0 +1,18 @@
+[
+  {
+    "id": "home",
+    "url": "/"
+  },
+  {
+    "id": "features",
+    "url": "/#features"
+  },
+  {
+    "id": "about",
+    "url": "/#introduction"
+  },
+  {
+    "id": "contact",
+    "url": "https://bronscode.nl/contact/"
+  }
+]

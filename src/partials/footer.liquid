@@ -1,0 +1,64 @@
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="logo">
+                {% include "img/microgrid_logo_dark.svg" %}
+            </div>
+            <div class="footer-nav">
+                <p>
+                    <b>Links</b>
+                </p>
+                <ul>
+                    {% for item in nav %}
+                        <li>
+                            <a href="{{ item.url | locale_url }}">
+                                {{ translations["nav"][item.id][locale] }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% comment %} <div>
+                <p>
+                    <b>Volg het Groeiportaal</b>
+                </p>
+                <p>
+                    &lt;social media links&gt;
+                </p>
+            </div> {% endcomment %}
+            <div class="footer-socials">
+                <p>
+                    <b>Follow Bronscode B.V.</b>
+                </p>
+                <p>
+                    <a href="https://bronscode.nl" target="_blank">
+                        {% include 'img/icons-globe-thin.svg' %}
+                    </a>
+                    <a href="mailto:info@bronscode.nl" target="_blank">
+                        {% include 'img/icons-mail-thin.svg' %}
+                    </a>
+                    <a href="https://www.linkedin.com/company/bronscode" target="_blank">
+                        {% include 'img/icons-linkedin-fill.svg' %}
+                    </a>
+                    <a href="https://www.github.com/bronscode" target="_blank">
+                        {% include 'img/icons-github-fill.svg' %}
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-partners">
+            <div class="logo">
+
+                    <img src="/img/eu_cofunded.png" style="width: 75%"/>
+            </div>
+        </div>
+        <hr/>
+        <span id="copy">Copyright &copy; 2026 Bronscode B.V.</span>
+    </div>
+</footer>
+</body>
+
+<link rel="stylesheet" href="/css/style.css" />
+<script type="text/javascript" async src="/js/main.js"></script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICROGRID | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Roboto:ital,wght@0,200;0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+    <nav>
+        <div class="container">
+            <a class="logo" href="/">
+                {% include 'img/microgrid_logo_dark.svg' %}
+            </a>
+            <ul>
+                {% for item in nav %}
+                    <li {% if page.url == item.url %}class="active"{% endif %}>
+                        <a href="{{ item.url | locale_url }}" {% if item.id == "contact" %}class="btn"{% endif %}>
+                            {{ translations["nav"][item.id][locale] }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            {% if locale == "nl" %}
+            <div class="language-switch">
+                <div class="language-switch-btn">
+                    NL &blacktriangledown;
+                </div>
+                <a href="/en/{{ pageName }}" class="language-switch-menu" onclick="localStorage.setItem('preferredLang', 'en')">
+                   EN &nbsp;&nbsp;
+                </a>
+            </div>
+            {% endif %}
+            {% if locale == "en" %}
+            <div class="language-switch">
+                <div class="language-switch-btn">
+                    EN &blacktriangledown;
+                </div>
+                <a href="/nl/{{ pageName }}" class="language-switch-menu" onclick="localStorage.setItem('preferredLang', 'nl')">
+                   NL &nbsp;&nbsp;
+                </a>
+            </div>
+            {% endif %}
+            <div class="mobile-nav-btn">
+                {% include 'img/icons-list.svg' %}
+            </div>
+        </div>
+    </nav>
