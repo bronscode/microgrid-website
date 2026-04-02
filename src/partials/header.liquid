@@ -30,7 +30,7 @@
                     </li>
                 {% endfor %}
             </ul>
-            {% if locale == "nl" %}
+            {% comment %} {% if locale == "nl" %}
             <div class="language-switch">
                 <div class="language-switch-btn">
                     NL &blacktriangledown;
@@ -49,7 +49,7 @@
                    NL &nbsp;&nbsp;
                 </a>
             </div>
-            {% endif %}
+            {% endif %} {% endcomment %}
             <div class="mobile-nav-btn">
                 {% include 'img/icons-list.svg' %}
             </div>
