@@ -192,6 +192,12 @@ nav .mobile-nav-btn svg {
 }
 
 @media (max-width: 768px) {
+    nav {
+        height: 60px;
+    }
+    nav .logo {
+        height: 30px;
+    }
     nav ul {
         display: none;
     }
@@ -200,7 +206,7 @@ nav .mobile-nav-btn svg {
         width: 100vw;
         padding: 2rem 0;
         position: absolute;
-        top: 70px;
+        top: 45px;
         background-color: var(--pink);
         left: 0;
     }
@@ -253,7 +259,8 @@ nav .mobile-nav-btn svg {
     border-radius: 10px;
     transition: background-color 150ms ease;
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
+    align-content: center;
 }
 
 .btn-dark {
