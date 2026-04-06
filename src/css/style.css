@@ -366,14 +366,21 @@ footer .logo {
 }
 
 .footer-partners {
-    margin-top: 3rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: start;
 } .footer-partners span {
     display: block;
     font-size: 0.9rem;
 } .footer-partners .logo {
-    margin-top: 0.75rem;
+    flex: 0 0 20rem;
     display: inline-block;
-    height: 30px;
+}
+
+.footer-partners p {
+    margin-bottom: 0;
+    color: #eee;
+    flex: 1;
 }
 
 .footer-socials a {
