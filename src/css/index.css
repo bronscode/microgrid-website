@@ -183,6 +183,21 @@ ol li {
     margin: 0.5rem 0;
 }
 
+.section-descriptor {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 25px;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .section-descriptor {
+        margin-bottom: 18px;
+    }
+}
+
 #features {
   padding: 100px 0;
   background-color: #fff;
