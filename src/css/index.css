@@ -650,6 +650,23 @@ ol li {
   transform: translateX(4px);
 }
 
+.case-link-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.case-link-back span {
+  transition: transform 200ms ease;
+}
+
+.case-link-back:hover span {
+  transform: translateX(-4px);
+}
+
 .cases-grid:has(.case-card:only-child) {
   grid-template-columns: 1fr;
 }
