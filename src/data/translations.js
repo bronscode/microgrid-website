@@ -5,7 +5,8 @@ const i18n = {
     nav: {
       home: "home",
       features: "features",
-      about: "about",
+      problem: "problem",
+      cases: "cases",
       contact: "Contact us",
     },
     test: {
@@ -16,7 +17,8 @@ const i18n = {
     nav: {
       home: "home",
       features: "features",
-      about: "about",
+      problem: "problem",
+      cases: "cases",
       contact: "Contact us",
     },
     test: {

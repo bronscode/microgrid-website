@@ -2,9 +2,22 @@ window.addEventListener("load", () => {
   // Smooth anchor scroll
   document.querySelectorAll('a[href*="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
-      e.preventDefault();
-      const id = a.getAttribute("href").split("#")[1];
+      const href = a.getAttribute("href") || "";
+      const url = new URL(href, window.location.origin);
+      const isSamePage = url.pathname === window.location.pathname;
+
+      // Let the browser handle cross-page anchors (e.g. /en/#features)
+      if (!isSamePage) {
+        return;
+      }
+
+      const id = url.hash.replace("#", "");
       const el = document.getElementById(id);
+      if (!el) {
+        return;
+      }
+
+      e.preventDefault();
       const top = el.offsetTop - 50;
       window.scroll({
         top,

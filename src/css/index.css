@@ -313,11 +313,11 @@ ol li {
 
 }
 
-#about {
+#problem {
   padding: 100px 0;
 }
 
-#about .section-heading {
+#problem .section-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -325,19 +325,19 @@ ol li {
   margin-bottom: 70px;
   align-items: center;
 }
-#about .section-heading h2 {
+#problem .section-heading h2 {
   font-size: clamp(2.5rem, 2vw, 4.5rem);
   line-height: 1;
   margin-bottom: 25px;
 }
 
-#about .section-heading p {
+#problem .section-heading p {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 650px;
 }
 
-.about-grid {
+.problem-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
@@ -345,17 +345,17 @@ ol li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.about-item {
+.problem-item {
   position: relative;
   padding: 45px 35px 50px;
   min-height: 280px;
 }
 
-.about-item + .about-item {
+.problem-item + .problem-item {
   border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.about-number {
+.problem-number {
   display: block;
   font-size: 0.8rem;
   font-weight: 700;
@@ -364,31 +364,31 @@ ol li {
   opacity: 0.5;
 }
 
-.about-item h3 {
+.problem-item h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-.about-item p {
+.problem-item p {
   line-height: 1.6;
   max-width: 300px;
 }
 
-.about-highlight {
+.problem-highlight {
   margin-top: 70px;
   padding: 50px;
   background: #111;
   color: white;
 }
 
-.about-highlight {
+.problem-highlight {
   margin-top: 70px;
   padding: 50px;
   background: #111;
   color: white;
 }
 
-.about-highlight span {
+.problem-highlight span {
   display: block;
   font-size: 0.75rem;
   font-weight: 700;
@@ -396,7 +396,7 @@ ol li {
   margin-bottom: 20px;
 }
 
-.about-highlight p {
+.problem-highlight p {
   max-width: 900px;
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   line-height: 1.2;
@@ -404,47 +404,47 @@ ol li {
 }
 
 @media (max-width: 600px) {
-  .about-highlight {
+  .problem-highlight {
     margin-top: 45px;
     padding: 35px 25px;
   }
 
-  .about-highlight p {
+  .problem-highlight p {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  #about .section-heading {
+  #problem .section-heading {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-grid {
+  .problem-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-item {
+  .problem-item {
     padding: 30px 20px 35px;
     min-height: auto;
   }
 
-  .about-item + .about-item {
+  .problem-item + .problem-item {
     border-left: none;
     border-top: 1px solid rgba(0, 0, 0, 0.15);
   }
 
-  .about-number {
+  .problem-number {
     margin-bottom: 18px;
   }
 
-  .about-item h3 {
+  .problem-item h3 {
     font-size: 1.3rem;
   }
 
-  .about-item p {
+  .problem-item p {
     max-width: none;
   }
 }
