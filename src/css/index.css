@@ -29,7 +29,6 @@
     animation: slideGradient 4s ease-in-out infinite;
 }
 
-
 #landing {
     opacity: 0;
     transition: opacity 600ms ease;
@@ -208,7 +207,7 @@ ol li {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   margin-bottom: 70px;
-  align-items: end;
+  align-items: center;
 }
 
 #features .section-heading h2 {
@@ -325,16 +324,18 @@ ol li {
   margin-bottom: 70px;
   align-items: center;
 }
+
 #problem .section-heading h2 {
   font-size: clamp(2.5rem, 2vw, 4.5rem);
   line-height: 1;
-  margin-bottom: 25px;
+  margin: 0;
 }
 
 #problem .section-heading p {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 650px;
+  margin: 0;
 }
 
 .problem-grid {
@@ -383,7 +384,7 @@ ol li {
 
 .problem-highlight {
   margin-top: 70px;
-  padding: 50px;
+  padding: 60px;
   background: #111;
   color: white;
 }
@@ -459,7 +460,7 @@ ol li {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   margin-bottom: 70px;
-  align-items: end;
+  align-items: center;
 }
 
 #why-it-works .section-heading h2 {
@@ -483,7 +484,6 @@ ol li {
 }
 
 .why-image {
-  min-height: 550px;
   overflow: hidden;
 }
 

@@ -314,6 +314,10 @@ nav .mobile-nav-btn svg {
     color: var(--pink);
 }
 
+.text-purple {
+    color: var(--purple);
+}
+
 footer {
     background: var(--rich-black);
     padding: 4rem 0;
