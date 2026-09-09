@@ -205,7 +205,7 @@ ol li {
 #features .section-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 70px;
   margin-bottom: 70px;
   align-items: center;
 }
@@ -219,8 +219,8 @@ ol li {
 #features .section-heading p {
   font-size: 1.2rem;
   line-height: 1.6;
-  max-width: 600px;
   margin: 0;
+  justify-self:  end;
 }
 
 .features-list {
@@ -253,7 +253,6 @@ ol li {
 }
 
 .feature-content p {
-  max-width: 600px;
   line-height: 1.6;
   margin: 0;
 }
@@ -319,7 +318,7 @@ ol li {
 #problem .section-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 70px;
   max-width: none;
   margin-bottom: 70px;
   align-items: center;
@@ -458,7 +457,7 @@ ol li {
 #why-it-works .section-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 70px;
   margin-bottom: 70px;
   align-items: center;
 }
@@ -472,7 +471,6 @@ ol li {
 #why-it-works .section-heading p {
   font-size: 1.2rem;
   line-height: 1.6;
-  max-width: 600px;
   margin: 0;
 }
 
@@ -553,16 +551,17 @@ ol li {
 }
 
 #cases {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 150px;
   background-color: #fff;
 }
 
 #cases .section-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 70px;
   margin-bottom: 70px;
-  align-items: end;
+  align-items: center;
 }
 
 #cases .section-heading h2 {
@@ -574,7 +573,6 @@ ol li {
 #cases .section-heading p {
   font-size: 1.2rem;
   line-height: 1.6;
-  max-width: 600px;
   margin: 0;
 }
 
@@ -613,7 +611,6 @@ ol li {
 
 .case-meta {
   margin-bottom: 20px;
-
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -624,13 +621,13 @@ ol li {
   max-width: 650px;
   font-size: clamp(1.7rem, 2.5vw, 2.5rem);
   line-height: 1.1;
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 }
 
 .case-content p {
   max-width: 550px;
   line-height: 1.6;
-  margin: 0 0 25px;
+  margin: 0 0 35px;
 }
 
 .case-link {
@@ -675,7 +672,7 @@ ol li {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: 50px;
-  align-items: start;
+  align-items: center;
 }
 
 .cases-grid:has(.case-card:only-child) .case-content {
@@ -710,7 +707,8 @@ ol li {
 }
 
 #introduction {
-    padding: 2rem 0;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 } #introduction .row {
     display: flex;
     align-items: center;
@@ -737,7 +735,7 @@ ol li {
     background: url('/img/3dbag_dark.png');
     background-size: cover;
     color: #fff;
-    padding: 7.5rem 0;
+    padding: 10rem 0;
 }
 
 #growth .container {
