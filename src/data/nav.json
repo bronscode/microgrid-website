@@ -4,12 +4,16 @@
     "url": "/"
   },
   {
+    "id": "problem",
+    "url": "/#problem"
+  },
+  {
     "id": "features",
     "url": "/#features"
   },
-  {
-    "id": "about",
-    "url": "/#introduction"
+    {
+    "id": "cases",
+    "url": "/#cases"
   },
   {
     "id": "contact",

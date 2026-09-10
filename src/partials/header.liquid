@@ -18,13 +18,13 @@
     </style>
     <nav>
         <div class="container">
-            <a class="logo" href="/">
+            <a class="logo" href="{{ '/' | locale_url }}">
                 {% include 'img/microgrid_logo_dark.svg' %}
             </a>
             <ul>
                 {% for item in nav %}
                     <li {% if page.url == item.url %}class="active"{% endif %}>
-                        <a href="{{ item.url | locale_url }}" {% if item.id == "contact" %}class="btn"{% endif %}>
+                        <a href="{% if item.url contains '/#' %}/{{ locale }}{{ item.url }}{% else %}{{ item.url | locale_url }}{% endif %}" {% if item.id == "contact" %}class="btn"{% endif %}>
                             {{ translations["nav"][item.id][locale] }}
                         </a>
                     </li>
