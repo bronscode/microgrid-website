@@ -5,7 +5,7 @@ import CleanCSS from "clean-css";
 
 import translations from "./src/data/translations.js";
 
-const pages = ["index"];
+const pages = ["index", "arnhems-buiten"];
 
 const languages = ["en"];
 
